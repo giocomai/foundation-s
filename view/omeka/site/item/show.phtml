@@ -18,6 +18,9 @@ $showLayout = $this->themeSetting('show_layout');
 <div class="media-embeds">
 <?php foreach ($itemMedia as $media):
     echo $media->render();
+    if (sizeof($media->values())>1 || sizeof($itemMedia)>1):
+     echo $media->displayValues();
+   endif;
 endforeach;
 ?>
 </div>
