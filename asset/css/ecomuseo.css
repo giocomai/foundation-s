@@ -183,3 +183,18 @@ max-height: 7.5rem;
 .resource.show .resource-link {
   margin-bottom: 0;
 }
+
+
+.item-showcase {
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+    }
+
+
+.item.resource {
+    width: 25%;
+    text-align: center;
+    float: left;
+}
