@@ -6,7 +6,7 @@ $this->headMeta()->setCharset('utf-8');
 $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1');
 $this->headTitle($this->setting('installation_title', 'Omeka S'))->setSeparator(' · ');
 if (isset($stylesheet)) {
-    $this->headLink()->prependStylesheet($this->assetUrl("css/$stylesheet.css"));    
+    $this->headLink()->prependStylesheet($this->assetUrl("css/$stylesheet.css"));
 } else {
     $this->headLink()->prependStylesheet($this->assetUrl('css/default.css'));
 }
@@ -40,11 +40,11 @@ endif;
         <?php echo $this->headLink(); ?>
         <?php echo $this->headStyle(); ?>
         <?php echo $this->headScript(); ?>
-         <link rel="stylesheet" href="/themes/foundation_eco_base/asset/css/ecomuseo.css"> 
+         <link rel="stylesheet" href="/themes/foundation_eco_base/asset/css/ecomuseo.css">
     </head>
 
     <?php echo $this->htmlElement('body'); ?>
-    
+
         <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
             <?php echo $site->publicNav()->menu()->setPartial('common/foundation-navigation.phtml')->renderPartialWithParams(['layout' => 'vertical']); ?>
             <div class="search">
@@ -68,7 +68,7 @@ endif;
                 <?php echo $footerContent; ?>
                 <?php else: ?>
                 <hr />
-                    Sito parte dell'<a href="https://archiviomemoria.ecomuseovalledeilaghi.it/">Archivio della Memoria</a>, un'iniziativa dell'<a href="https://ecomuseovalledeilaghi.it/">Ecomuseo della Valle dei Laghi</a>
+                    Sito parte dell'<a href="https://archiviomemoria.ecomuseovalledeilaghi.it/">Archivio della Memoria</a>, un'iniziativa dell'<a href="https://www.ecomuseovalledeilaghi.it/">Ecomuseo della Valle dei Laghi</a>
                 <?php endif; ?>
             </footer>
         </div>
