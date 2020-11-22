@@ -36,7 +36,7 @@ font-family: Open Sans;
 }
 
 .menu .active > a, .toc-block > ul .active > a, .toc-block ul ul .active > a {
-    background: #b7a69f;
+    background: #b7aba6;
     color: #201d1b;
 }
 
@@ -46,18 +46,42 @@ font-family: Open Sans;
 }
 
 
+.vertical.menu a {
+  
+  color: white;
+  font-weight: normal;
+  
+}
+
+.sub-menu.wide.sticky-container a {
+  
+  color: #b7410e;
+  font-weight: bold;
+  
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent.active > a:hover {
+  color: white;
+  background-color: #201d1b;
+}
+
+
+.breadcrumbs a {
+    color: #b7410e;
+}
+
 .button:hover, :hover[type="submit"] {
 color: #B7410E;
 background: #fefefe;
 }
 
 .input-group-button a, .input-group-button input, .input-group-button button, .input-group-button label {
-    background: #b7a69f;
+    background: #b7aba6;
     color: #201d1b;
 }
 
 .menu a:hover, a:focus {
-    color: #b7a69f;
+    color: #b7aba6;
     text-decoration: underline;
 }
 
