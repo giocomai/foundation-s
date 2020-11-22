@@ -18,10 +18,11 @@ $showLayout = $this->themeSetting('show_layout');
 <div class="media-embeds">
 <?php foreach ($itemMedia as $media):
     echo $media->render();
-    <!-- Ecomuseo Custom start -->
+    //  Ecomuseo Custom start 
     if (sizeof($media->values())>1 || sizeof($itemMedia)>1):
     echo $media->displayValues();
-    <!-- Ecomuseo Custom end -->
+    endif;
+    //  Ecomuseo Custom end 
      
 endforeach;
 ?>
