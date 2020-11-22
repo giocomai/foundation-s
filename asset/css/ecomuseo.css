@@ -27,6 +27,10 @@ font-size:1.2em;
 font-family: Open Sans;
 }
 
+.nav-header:hover {
+  color: #b7aba6;
+}
+
 .menu a {
  color: white;
 }
@@ -86,6 +90,14 @@ font-family: Open Sans;
   background-color: #201d1b;
 }
 
+.dropdown.menu > li.is-active > a {
+  color:white;
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after, .toc-block > ul.dropdown > li.is-dropdown-submenu-parent > a::after, .toc-block ul ul.dropdown > li.is-dropdown-submenu-parent > a::after {
+  border-color: white transparent transparent;
+}
+
 .breadcrumbs a {
     color: #b7410e;
 }
@@ -101,7 +113,7 @@ background: #fefefe;
 }
 
 .menu a:hover, a:focus {
-    color: #b7aba6;
+   /* color: #b7aba6; */
     text-decoration: underline;
 }
 
