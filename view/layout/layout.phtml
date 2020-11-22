@@ -40,6 +40,9 @@ endif;
         <?php echo $this->headLink(); ?>
         <?php echo $this->headStyle(); ?>
         <?php echo $this->headScript(); ?>
+        ## Ecomuseo Custom start ##
+        <link rel="stylesheet" href="/themes/foundation_eco_base/asset/css/ecomuseo.css">
+        ## Ecomuseo Custom end ##
     </head>
 
     <?php echo $this->htmlElement('body'); ?>
@@ -67,7 +70,11 @@ endif;
                 <?php if ($footerContent = $this->themeSetting('footer')): ?>
                 <?php echo $footerContent; ?>
                 <?php else: ?>
-                    <?php echo $this->translate('Powered by Omeka S'); ?>
+                 <!-- Ecomuseo Custom start -->
+                    <!-- <?php echo $this->translate('Powered by Omeka S'); ?> -->
+                    <hr />
+                    Sito parte dell'<a href="https://archiviomemoria.ecomuseovalledeilaghi.it/">Archivio della Memoria</a>, un'iniziativa dell'<a href="https://www.ecomuseovalledeilaghi.it/">Ecomuseo della Valle dei Laghi</a>
+                 <!-- Ecomuseo Custom end -->
                 <?php endif; ?>
             </footer>
         </div>
