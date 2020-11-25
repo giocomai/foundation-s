@@ -1,5 +1,5 @@
 <?php if ($this->themeSetting('logo')): ?>
-    <?php $titleLink = '<a href="' . $site->url() . '" class="site-title"><img src="' . $this->themeSettingAssetUrl('logo') . '" title="Logo"></a>'; ?>
+    <?php $titleLink = '<a href="' . $site->url() . '" class="site-title"><img src="' . $this->themeSettingAssetUrl('logo') . '" title="Logo"></a>      <h1><a href="/s/archivio" class="site-title">Archivio della Memoria della Valle dei Laghi</a></h1>'; ?>
 <?php else: ?>
     <?php $titleLink = '<a href="' . $site->url() . '" class="site-title">' . $this->pageTitle($site->title()) . '</a>'; ?>
 <?php endif; ?>
