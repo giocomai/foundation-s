@@ -2,3 +2,6 @@
 bower_components
 node_modules
 npm-debug.log
+.Rproj.user
+.Rhistory
+foundation-s.Rproj

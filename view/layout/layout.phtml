@@ -41,7 +41,7 @@ endif;
         <?php echo $this->headStyle(); ?>
         <?php echo $this->headScript(); ?>
         <!-- Ecomuseo Custom start -->
-        <link rel="stylesheet" href="/themes/foundation_eco_base/asset/css/ecomuseo.css">
+        <link rel="stylesheet" href="/themes/foundation_archiviomemoria/asset/css/ecomuseo.css">
         <!-- Ecomuseo Custom end -->
     </head>
 
@@ -63,9 +63,77 @@ endif;
                 <?php echo $this->partial('common/header-dropdown'); ?>
                 <?php endif; ?>
             </header>
+            
+            <!-- modifica homepage -->
+<?php
+$path =  $_SERVER["REQUEST_URI"];
+   
+if ($path == "/s/archivio/page/homepage") { ?>
+<style type="text/css">
+::placeholder { 
+font-size:1em;
+font-style: normal;
+}
+
+input[type="text"] {
+ font-size:1em;
+}
+
+#search {
+display:none;
+}
+
+</style>
+
+<div style="background-image: url('/themes/foundation_archiviomemoria/asset/img/old_letters.jpg');background-size: cover;background-position: center;padding-bottom:100px;padding-top:80px;margin-top:0px;">
+<div style="background:rgba(255,255,255,0.7);max-width:550px;border-radius: 25px;padding-bottom:40px;padding-top:1px;text-align:center;margin: 0 auto;">
+<h2 style = "text-align:center;">COSA STAI CERCANDO?</h2>
+            <div id="search-homepage" style="text-align:center;font-size:2em;">
+<form action="../index/search" id="search-form">
+    <input type="text" name="fulltext_search" value="" placeholder="" style="height:1.8em;max-width:340px;margin:10px;border: solid 1px;">
+    <!-- <button type="submit" style = "text-size:2em;height:6em;width:100px;">Cerca</button> -->
+<a href="../index/search"><img src="/themes/foundation_archiviomemoria/asset/img/lente_nera.png" border="0" alt="Cerca" style="margin-top:10px;"/></a>
+</form>
+            </div></div></div>
+<h3 style = "text-align:center;">Archivio della Memoria della Valle dei Laghi.<br />
+Tracce di un passato che rappresentano l’identità di un territorio.</h3>
+<p style="text-align:center;"><i>un'iniziativa di:</i></p>
+         <a href="https://www.ecomuseovalledeilaghi.it/it/" target="_blank"><div style="text-align:center;"><img src="/themes/foundation_archiviomemoria/asset/img/logo_scritta.png" align="center"></a></div>
+
+  <!-- 
+         <div style="text-align:center;"><div style="display:inline-block;width:600px;"><img src="/files/asset/7658bd8b128c3eccedb2c6f6fb58dbeba15c4265.png" align="left"><h2 style = "text-align:left;font-family: Open Sans;margin-top:-10px;color:#4083c9; font-size:64px;line-height:1;">Ecomuseo<br /> Valle dei Laghi</h2></div></div>
+-->
+     <?php      
+    }
+    ?>
+
+  <!-- fine modifica homepage -->
+            
+            
+            
+            
             <div id="content" role="main">
                 <?php echo $this->content; ?>
             </div>
+            
+            
+
+  <!-- nuova modifica homepage -->
+<hr />
+<div style="text-align:center;font-variant:small-caps;margin: 0 auto;"> 
+<div style="width:180px; display: inline-block;vertical-align:top;"><a href="../map-browse"><img src="/themes/foundation_archiviomemoria/asset/img/esplora_mappa.png" style="max-width:220px;max-height:120px;margin:10px;">Esplora tramite mappa</a></div>
+
+<div style="width:180px; display: inline-block;vertical-align:top;"><a href="https://www.ecomuseovalledeilaghi.it/it/" target="_blank"><img src="/themes/foundation_archiviomemoria/asset/img/vai_a_ecomuseo.png" style="max-width:220px;max-height:120px;margin:10px;">Visita il sito di Ecomuseo</a></div>
+
+<div style="width:180px; display: inline-block;vertical-align:top;"><a href="/s/archivio/page/info"><img src="/themes/foundation_archiviomemoria/asset/img/informazioni.png" style="max-width:220px;max-height:120px;margin:10px;">Informazioni</a></div>
+
+<div style="width:180px; display: inline-block;vertical-align:top;"><a href="/s/archivio/page/collabora-anche-tu"><img src="/themes/foundation_archiviomemoria/asset/img/collabora.png" style="max-width:220px;max-height:120px;margin:10px;">Collabora anche tu</a></div>
+</div>
+</div>
+  <!-- fine modifica homepage -->
+            
+            
+            
             <footer>
                 <?php if ($footerContent = $this->themeSetting('footer')): ?>
                 <?php echo $footerContent; ?>
@@ -78,6 +146,24 @@ endif;
                 <?php endif; ?>
             </footer>
         </div>
+        
+        <!-- nuova modifica homepage -->
+
+<?php   if ($path == "/s/archivio/page/homepage") { ?>
+<div style="font-size-adjust: 0.4; line-height: 20px; text-align:center;border-width:1px;border-style:solid;border-color:gray; background-color:white;padding:10px;">
+<img src="/themes/foundation_archiviomemoria/asset/img/1-logo_gal.jpg" style="max-width:220px;max-height:120px;margin:10px;">
+<img src="/themes/foundation_archiviomemoria/asset/img/2-logo-psr.jpg" style="max-width:220px;max-height:120px;margin:10px;">
+<img src="/themes/foundation_archiviomemoria/asset/img/3-logo-unione.jpg" style="max-width:220px;max-height:120px;margin:10px;">
+<img src="/themes/foundation_archiviomemoria/asset/img/4-logo-leader.jpg" style="max-width:220px;max-height:120px;margin:10px;">
+<img src="/themes/foundation_archiviomemoria/asset/img/5-logo-italia.jpg" style="max-width:220px;max-height:120px;margin:10px;">
+<img src="/themes/foundation_archiviomemoria/asset/img/6-logo-trento.jpg" style="max-width:220px;max-height:120px;margin:10px;">
+<img src="/themes/foundation_archiviomemoria/asset/img/Comunita-della-Valle-dei-Laghi_entilocali_logo.jpg" style="max-width:220px;max-height:120px;margin:10px;">
+<p>PSR 2014-2020 MISURA 19- “SOSTEGNO ALLO SVILUPPO LOCALE LEADER”<br />Iniziativa realizzata con il cofinanziamento del FEASR (Fondo Europeo Agricolo per lo Sviluppo Rurale) e con Fondi Statali e Provinciali </p>
+</div>
+     <?php      
+    }
+    ?>
+        
         <script>
           $(document).foundation();
         </script>
