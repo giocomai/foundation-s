@@ -7,17 +7,11 @@
     </nav>
     <div class="top-bar-right" id="responsive-menu">
         <?php echo $site->publicNav()->menu()->setPartial('common/foundation-navigation.phtml')->renderPartialWithParams(['layout' => 'dropdown']); ?>
-        <?php $path =  $_SERVER["REQUEST_URI"]; ?>
-       <?php if ($path != "/s/archivio/page/homepage"): ?>
+
         <div class="search">
        <?php echo $this->partial('common/search-form'); ?>
         </div>
-<?php else: ?>
-<div class="search">
-       <?php echo $this->partial('common/search-form'); ?>
-        </div>
-<a href="<?php echo $site->url(); ?>" class="site-title"><img src="/themes/foundation_archiviomemoria/asset/img/logo_ecomuseo_scritta.png" title="Logo Ecomuseo della Valle dei Laghi"></a>
-<?php endif; ?>
+<a href="<?php echo $site->url(); ?>" class="site-title"><img src="/themes/foundation_archiviomemoria/asset/img/logo_ecomuseo_scritta.png" title="Logo Ecomuseo della Valle dei Laghi" style="margin-left:10px;"></a>
         
     </div>
 </div>
