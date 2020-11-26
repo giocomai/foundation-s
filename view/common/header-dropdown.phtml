@@ -3,16 +3,21 @@
         <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="large">
             <button class="menu-toggle" type="button" data-toggle="offCanvas" aria-label="<?php echo $this->translate('Menu'); ?>"><i class="fas fa-bars"></i></button>
         </div>
-        <?php if ($this->themeSetting('logo')): ?>
-        <a href="<?php echo $site->url(); ?>" class="site-title"><img src="<?php echo $this->themeSettingAssetUrl('logo'); ?>" title="Logo"></a><h1><a href="/s/archivio" class="site-title" style="color:#B7410E;font-size:0.6em;">Archivio della Memoria della Valle dei Laghi</a></h1>
-        <?php else: ?>
-        <a href="<?php echo $site->url(); ?>" class="site-title"><?php echo $this->pageTitle($site->title()); ?></a>
-        <?php endif; ?>
+        <h1><a href="/s/archivio" class="site-title" style="color:#B7410E;font-size:0.6em;">Archivio della Memoria della Valle dei Laghi</a></h1>
     </nav>
     <div class="top-bar-right" id="responsive-menu">
         <?php echo $site->publicNav()->menu()->setPartial('common/foundation-navigation.phtml')->renderPartialWithParams(['layout' => 'dropdown']); ?>
+        <?php $path =  $_SERVER["REQUEST_URI"]; ?>
+       <?php if ($path != "/s/archivio/page/homepage"): ?>
         <div class="search">
-            <?php echo $this->partial('common/search-form'); ?>
+       <?php echo $this->partial('common/search-form'); ?>
         </div>
+<?php else: ?>
+<div class="search">
+       <?php echo $this->partial('common/search-form'); ?>
+        </div>
+<a href="<?php echo $site->url(); ?>" class="site-title"><img src="/themes/foundation_archiviomemoria/asset/img/logo_ecomuseo_scritta.png" title="Logo Ecomuseo della Valle dei Laghi"></a>
+<?php endif; ?>
+        
     </div>
 </div>
