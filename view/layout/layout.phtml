@@ -89,12 +89,15 @@ display:none;
 <div style="background:rgba(255,255,255,0.7);max-width:550px;border-radius: 25px;padding-bottom:40px;padding-top:20px;text-align:center;margin: 0 auto;">
 <h2 style = "text-align:center;">COSA STAI CERCANDO?</h2>
             <div id="search-homepage" style="text-align:center;font-size:2em;display:inline-block;">
-<form action="../index/search" id="search-form">
-    <input type="text" name="fulltext_search" value="" placeholder="" style="height:1.8em;max-width:340px;margin:10px;border: solid 1px;">
-    <!-- <button type="submit" style = "text-size:2em;height:6em;width:100px;">Cerca</button> -->
-<a href="../index/search"><img src="/themes/foundation_archiviomemoria/asset/img/lente_nera.png" border="0" alt="Cerca" style="margin-top:10px;"/></a>
-</form>
-            </div></div></div>
+              <div class="search">
+                <?php echo $this->partial('common/search-form-homepage'); ?>
+            </div>
+            <div style = "font-size:0.4em;">
+            <b><a href="/s/pubblicazioni-sulla-valle-dei-laghi/page/home-page">Per cercare tra le pubblicazioni, visita la sezione dedicata</a></b></div>
+          </div>
+            
+            
+            </div></div>
 <h3 style = "text-align:center;">Archivio della Memoria della Valle dei Laghi.<br />
 Tracce di un passato che rappresenta l’identità di un territorio.</h3>
 </div>
