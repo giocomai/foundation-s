@@ -1,22 +1,22 @@
 @font-face {
     font-family: Jost;
-    src: url("/themes/foundation_eco_base/asset/font/Jost-400-Book.ttf") format("truetype");
+    src: url("/themes/foundation_archiviomemoria/asset/font/Jost-400-Book.ttf") format("truetype");
 }
 
  @font-face {
   font-family: Jost;
-  src: url("/themes/foundation_eco_base/asset/font/Jost-700-Bold.ttf") format("truetype");
+  src: url("/themes/foundation_archiviomemoria/asset/font/Jost-700-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
     font-family: Open Sans;
-    src: url("/themes/foundation_eco_base/asset/font/OpenSans-Regular.ttf") format("truetype");
+    src: url("/themes/foundation_archiviomemoria/asset/font/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: Open Sans;
-    src: url("/themes/foundation_eco_base/asset/font/OpenSans-Bold.ttf") format("truetype");
+    src: url("/themes/foundation_archiviomemoria/asset/font/OpenSans-Bold.ttf") format("truetype");
     font-weight: bold;
 }
 
@@ -26,6 +26,14 @@ body {
 font-size:1.2em;
 font-family: Open Sans;
 word-wrap: break-word;
+}
+
+body a:hover{
+  color: #B7410E;
+}
+
+body a {
+  color: #802d09;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .preview-block h4, .preview-block, .site-title .preview-block h1, .h5, h6, .h6 {
@@ -55,3 +63,72 @@ a:hover a:focus {
 }
 
 
+.nav-header:hover {
+  color: #B7410E;
+}
+
+.button {
+  background-color: #B7410E;
+  color: white;
+}
+
+.menu .active > a, .toc-block > ul .active > a, .toc-block ul ul .active > a {
+    background: #B7410E;
+    color: white;
+}
+
+.filter-label {
+  background: #B7410E;
+    color: white;
+}
+
+.label {
+  display: none;
+}
+
+#advanced-search button {
+     background: #B7410E;
+    color: white;
+    padding: 10px;
+}
+
+
+.previous.o-icon-prev.button.inactive {
+    background: #b7afab;
+    color: #201d1b;
+}
+
+.next.o-icon-next.button.inactive {
+    background: #b7afab;
+    color: #201d1b;
+}
+
+.previous.o-icon-prev.button {
+    background: #b99686;
+    color: #201d1b;
+}
+
+.next.o-icon-next.button {
+    background: #b99686;
+    color: #201d1b;
+}
+
+.grid.o-icon-grid {
+    background: #b99686;
+    color: #201d1b;
+}
+
+.list.o-icon-list {
+    background: #b99686;
+    color: #201d1b;
+}
+
+.media-embeds {
+  font-size:80%;
+  line-height:1;
+}
+
+.media-embeds dl {
+  line-height:1.2;
+  margin-bottom: 0.3rem;
+}
