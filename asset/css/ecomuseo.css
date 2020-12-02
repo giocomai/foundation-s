@@ -132,3 +132,18 @@ a:hover a:focus {
   line-height:1.2;
   margin-bottom: 0.3rem;
 }
+
+.item.resource {
+    width: 300px;
+    float: left;
+    height: 360px;
+    text-align: center;
+}
+
+.item-showcase .resource.item:hover img {
+    transform: scale(1.2);
+}
+
+.item-showcase .resource.item img {
+    transition: transform .2s ease-out;
+}
