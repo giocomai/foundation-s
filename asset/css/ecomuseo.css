@@ -28,6 +28,7 @@ font-family: Open Sans;
 word-wrap: break-word;
 }
 
+
 body a:hover{
   color: #B7410E;
 }
@@ -155,4 +156,28 @@ a:hover a:focus {
     text-align: center;
     width: 100%;
     float: right;
+}
+
+.description.fadeout::after {
+    content: "";
+    position: absolute;
+    top: 6.5rem;
+    left: 50%;
+    right: 0;
+    height: 2.5rem;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)), color-stop(60%, #fff));
+    background: linear-gradient(to right, rgba(255,255,255,0), #fff 60%);
+
+}
+
+.description.fadeout {
+max-height: 8.3rem;
+}
+
+.caption {
+    font-size: 0.81em;
+}
+
+#content {
+  font-size:1.1em;
 }
