@@ -181,3 +181,7 @@ max-height: 8.3rem;
 #content {
   font-size:1.1em;
 }
+
+th:nth-child(2),td:nth-child(2){
+      display:none;
+    }
