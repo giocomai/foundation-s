@@ -185,3 +185,9 @@ max-height: 8.3rem;
 th:nth-child(2),td:nth-child(2){
       display:none;
     }
+    
+    
+.omeka-pagination {
+  width: 50%;
+  margin-bottom: 0.83rem;
+}
