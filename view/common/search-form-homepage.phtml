@@ -15,8 +15,8 @@ $searchValue = $this->escapeHtml($this->params()->fromQuery('fulltext_search', '
 <form action="<?php echo $this->escapeHtml($searchAction); ?>" id="search-form" class="input-group">
     <input type="text" name="fulltext_search" value="<?php echo $searchValue; ?>"
         placeholder="<?php echo $translate('Search'); ?>"
-        aria-label="<?php echo $translate('Search'); ?>" class="input-group-field" style="height:2em;max-width:360px;margin:auto;border: solid 1px;">
+        aria-label="<?php echo $translate('Search'); ?>" class="input-group-field" id = "searchforminputhomepage">
     <div class="input-group-button">
-    <button type="submit" class="button" style="background-image:url('/themes/foundation_archiviomemoria/asset/img/lente_nera.png');background-color: transparent;width:80px;background-repeat: no-repeat;"> </button>
+    <button type="submit" class="button" id="lensbuttonhomepage"> </button>
     </div>
 </form>

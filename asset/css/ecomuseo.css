@@ -191,3 +191,128 @@ th:nth-child(2),td:nth-child(2){
   width: 50%;
   margin-bottom: 0.83rem;
 }
+
+
+
+
+@media (min-width: 600px) {
+  
+#searchforminputhomepage {
+  height:2em;
+  max-width:360px;
+  margin:auto;
+  border: solid 1px;
+}
+
+
+#whiteboxcover {
+  background:rgba(255,255,255,0.7);
+  max-width:550px;
+  border-radius: 25px;
+  padding-bottom:40px;
+  padding-top:20px;
+  text-align:center;
+  margin: 0 auto;
+}
+
+#lensbuttonhomepage {
+  background-image:url('/themes/foundation_archiviomemoria/asset/img/lente_nera.png');
+  background-color: transparent;
+  width:80px;
+  background-repeat: no-repeat;
+}
+
+#testosottoboxricercahomepage {
+  font-size:0.4em;
+}
+
+
+  
+}
+
+
+@media (max-width: 600px) {
+  
+  #whiteboxcover {
+  max-width:340px;
+  background:rgba(255,255,255,0.7);
+  border-radius: 25px;
+  padding-bottom:40px;
+  padding-top:20px;
+  text-align:center;
+  margin: 0 auto;
+  }
+  
+  #searchforminputhomepage {
+  height:1em;
+  font-size: 1em;
+  max-width:280px;
+  margin-left:10px;
+  }
+  
+  #lensbuttonhomepage {
+  background-image:url('/themes/foundation_archiviomemoria/asset/img/lente_nera_30.png');
+  background-color: transparent;
+  width:80px;
+  background-repeat: no-repeat;
+  }
+  
+  #testosottoboxricercahomepage {
+  font-size:0.4em;
+  max-width:320px;
+  }
+  
+}
+
+    img#logosmallscreen {
+    max-width: 220px;
+  }
+
+  @media (min-width: 1024) {
+      img#logosmallscreen {
+    margin-right: 20px;
+  }
+      .title-bar {
+    width: 30%;
+  }
+  
+    img#logosmallscreen {
+    max-width: 220px;
+  }
+  }
+  
+  
+  @media (max-width: 1024px) {
+      img#logosmallscreen {
+    max-width: 180px;
+    margin-right: 10px;
+  }
+  
+    .title-bar {
+    width: 50%;
+  }
+  }
+  
+@media (max-width: 740px) {
+    img#logosmallscreen {
+    max-width: 160px;
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+  
+  .title-bar {
+    width: 80%;
+  }
+  }
+  
+@media (max-width: 380px) {
+    img#logosmallscreen {
+    max-width: 100px;
+    margin-right: 2px;
+    margin-left: -16px;
+  }
+    .title-bar {
+    width: 70%;
+  }
+  }
+  
