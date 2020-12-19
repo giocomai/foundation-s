@@ -328,12 +328,24 @@ th:nth-child(2),td:nth-child(2){
     margin-left: -16px;
   }
     .title-bar {
-    width: 70%;
+    width: 80%;
   }
   
   h1 {
     line-height: 0.8;
   }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .description.fadeout {
+    font-size: 1rem;
+}
+
+#content {
+  font-size: 1rem;
+}
   }
   
   
