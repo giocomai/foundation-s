@@ -28,7 +28,8 @@ font-family: Open Sans;
 }
 
 .nav-header:hover {
-  color: #b7aba6;
+    color: #B7410E;
+    background-color: white;
 }
 
 .menu a {
@@ -40,8 +41,9 @@ font-family: Open Sans;
 }
 
 .menu .active > a, .toc-block > ul .active > a, .toc-block ul ul .active > a {
-    background: #b7aba6;
-    color: #201d1b;
+background: white;
+color: #B7410E;
+font-weight: bold;
 }
 
 .button {
@@ -51,8 +53,6 @@ font-family: Open Sans;
 
 
 .vertical.menu a {
-  
-  color: white;
   font-weight: normal;
   
 }
@@ -71,7 +71,7 @@ font-family: Open Sans;
 
 .dropdown.menu > li.is-dropdown-submenu-parent.active:hover > a {
   color: white;
-  background-color: #201d1b;
+  background-color: #7c2b08;
 }
 
 .dropdown.menu > li.is-dropdown-submenu-parent.active > a {
@@ -108,13 +108,18 @@ background: #fefefe;
 }
 
 .input-group-button a, .input-group-button input, .input-group-button button, .input-group-button label {
-    background: #b7aba6;
+    background: white;
     color: #201d1b;
 }
 
 .menu a:hover, a:focus {
-   /* color: #b7aba6; */
-    text-decoration: underline;
+   /* color: white; */
+    text-decoration: none;
+}
+
+.title a:hover, a:focus {
+   /* color: white; */
+    text-decoration: none;
 }
 
 a:hover, a:focus {
@@ -130,6 +135,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .preview-block h4, .preview-block, .site
 color: #B7410E;
 font-family: Jost;
 font-weight: bold;
+text-decoration: none;
 }
 
 .site-title h1 {
@@ -140,7 +146,6 @@ font-weight: bold;
 }
 
 .title:hover{
-    color: #b7aba6;
     text-decoration: none;
 }
 
@@ -262,4 +267,46 @@ max-height: 7.5rem;
     text-align: center;
     width: 100%;
     float: right;
+}
+
+
+.position-left.is-transition-push {
+    -webkit-box-shadow: inset -13px 0 20px -13px rgba(183,65,14,0.25);
+    box-shadow: inset -13px 0 20px -13px rgba(183,65,24,0.25);
+}
+
+#offCanvas {
+  background-color: #B7410E;
+}
+
+:hover[type="button"] {
+  background-color: white;
+  color: #B7410E;
+  border-color: #B7410E;
+  border-width: 2px;
+}
+
+:focus[type="button"] {
+  background-color: #802d09;
+  color: white;
+}
+
+.title-bar button {
+    margin: 0 1rem 0 0;
+    background-color: white;
+    color: black;
+    border-color: #B7410E;
+    border-width: 2px;
+}
+
+.browse-toggle.closed {
+    background-color: #B7410E;
+    color: white;
+    border-width: 2px;
+}
+
+.browse-toggle.open {
+    background-color: #B7410E;
+    color: white;
+    border-width: 2px;
 }
