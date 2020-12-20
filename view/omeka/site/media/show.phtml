@@ -12,5 +12,5 @@ $translate = $this->plugin('translate');
 <?php echo $media->displayValues(); ?>
 <?php $this->trigger('view.show.after'); ?>
 
-
+<?php $itemTitle = $media->item()->title();?>
 <b>Per maggior contesto e dettagli su questo materiale, fai riferimento al contenuto a cui si riferisce</b>: <br /><b>→ <?php echo $media->item()->link($itemTitle); ?></b>
