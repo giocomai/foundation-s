@@ -320,3 +320,6 @@ max-height: 7.5rem;
 }
   
   
+.omeka-pagination {
+    width: 100%;
+}
